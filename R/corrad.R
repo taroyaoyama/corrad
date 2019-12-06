@@ -73,7 +73,7 @@ corrad <- function (DA, DB, rho, lag = FALSE, eliminate_phase = FALSE) {
     glB <- glasso(SB, rho)
 
     # anomaly scoring
-    AS <- AnomalyScore(SgA = glA$w, LmA = glA$wi, SgB = glB$w, LmB = glB$wi)
+    AS <- corr_as(SgA = glA$w, LmA = glA$wi, SgB = glB$w, LmB = glB$wi)
 
     return(list(AScore = AS, SA = SA, SB = SB,
                 SgA = glA$w, LmA = glA$wi, SgB = glB$w, LmB = glB$wi))
