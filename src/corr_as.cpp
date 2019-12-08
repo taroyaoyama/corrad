@@ -1,7 +1,7 @@
 
 #include <RcppEigen.h>
 
-//' Multiply a number by two
+//' Calculating correlation anomaly score using KL divergence
 //'
 //' @param SgA,SgB covariance matrix of reference or test data.
 //' @param LmA,LmB inverse covariance matrix (i.e. precision matrix)
