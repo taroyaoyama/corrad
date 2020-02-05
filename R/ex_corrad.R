@@ -80,7 +80,7 @@ ex_corrad <- function (DA, DB, rho, dlt, eliminate_phase = FALSE,
         glA <- glasso(SA, rho = rho)
         glB <- glasso(SB, rho = rho)
 
-        ASP[i, ] <- AnomalyScore(SgA = glA$w, LmA = glA$wi, SgB = glB$w, LmB = glB$wi)
+        ASP[i, ] <- corr_as(SgA = glA$w, LmA = glA$wi, SgB = glB$w, LmB = glB$wi)
 
         SgAs[,,i] <- glA$w
         LmAs[,,i] <- glA$wi
