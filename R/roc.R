@@ -1,5 +1,5 @@
 
-#' Parzen window smoothing
+#' ROC curve calculation
 #'
 #' @param score anomaly score for which roc is computed
 #' @param inx_anomaly indecies of abnormal variable

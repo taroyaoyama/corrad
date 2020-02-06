@@ -2,7 +2,7 @@
 % Please edit documentation in R/roc.R
 \name{ROC}
 \alias{ROC}
-\title{Parzen window smoothing}
+\title{ROC curve calculation}
 \usage{
 ROC(score, inx_anomaly)
 }
@@ -12,5 +12,5 @@ ROC(score, inx_anomaly)
 \item{inx_anomaly}{indecies of abnormal variable}
 }
 \description{
-Parzen window smoothing
+ROC curve calculation
 }
